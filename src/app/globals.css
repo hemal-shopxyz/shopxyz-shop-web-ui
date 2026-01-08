@@ -3,13 +3,21 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #1F2937;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: var(--primary);
+  --font-primary: var(--font-outfit);
+  --font-outfit-medium: var(--font-outfit);
+  --font-outfit-semi-bold: var(--font-outfit);
+  --font-outfit-bold: var(--font-outfit);
+  --font-outfit-extra-bold: var(--font-outfit);
+  --font-outfit-black: var(--font-outfit);
+  --font-outfit-light: var(--font-outfit);
+  --font-outfit-thin: var(--font-outfit);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +30,5 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-primary), Arial, Helvetica, sans-serif;
 }
